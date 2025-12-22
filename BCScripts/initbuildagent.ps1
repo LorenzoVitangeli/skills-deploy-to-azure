@@ -10,7 +10,7 @@ param(
     [string]$VMName
 )
 
-Write-Host "=== INIT BUILD AGENT SCRIPT STARTED ==="
+Write-Host "===LVI INIT BUILD AGENT SCRIPT STARTED ==="
 
 # Convert password
 $SecurePassword = ConvertTo-SecureString $AdminPassword -AsPlainText -Force
@@ -72,4 +72,4 @@ if ($FinalSetupScriptUrl -and $FinalSetupScriptUrl -ne "") {
     powershell.exe -ExecutionPolicy Bypass -File $FinalScript
 }
 
-Write-Host "=== INIT BUILD AGENT SCRIPT COMPLETED ==="
+Write-Host "===LVI INIT BUILD AGENT SCRIPT COMPLETED ==="
